@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <script src="angular.min.js"></script>
     <script src="app.js"></script>
-    <title>My first AngularJS App</title>
     <style>body { font-size: 1.3em; }</style>
     <title>Name Calculator</title>
   </head>
@@ -12,9 +11,10 @@
     <h1>Name Calculator</h1>
     <div ng-controller="NameCalculatorController">
       <div>
-        Your name: <input type="text" id="name" 
-                    ng-model="name"
-                    ng-keyup="displayNumeric();">;
+        Your name: 
+        <input type="text"
+        ng-model="name"
+        ng-keyup="displayNumeric();">
       </div>
       <div>
         Total numeric value for person's name is: {{totalValue}}
